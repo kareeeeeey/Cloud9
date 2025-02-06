@@ -95,3 +95,10 @@ footer {
     bottom: 0; /* or adjust as needed */
     width: 100%;
 }
+
+h2{
+color: white;
+text-align: center;
+justify-content: center;
+border: block;
+}

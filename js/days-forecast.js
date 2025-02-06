@@ -30,3 +30,22 @@ async function getForecastData(location) {
     forecastDisplay.innerHTML = "<p>Error fetching forecast data.</p>";
   }
 }
+
+// script.js (for index.html)
+const getWeatherButton = document.getElementById("get-weather");
+const cityDisplay = document.getElementById("city");
+const temperatureDisplay = document.getElementById("temperature");
+const conditionsDisplay = document.getElementById("conditions");
+const weatherIcon = document.getElementById("weather-icon");
+
+getWeatherButton.addEventListener("click", () => {
+  const location = locationInput.value;
+  getWeatherData(location);
+});
+
+async function getWeatherData(location) {
+  // ... (fetch weather data - same as before) ...
+}
+
+document.getElementById("weather-display").innerHTML =
+"The weather in your area is" + cityDisplay + temperatureDisplay + conditionsDisplay + weatherIcon
