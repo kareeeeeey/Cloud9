@@ -15,4 +15,7 @@ Cynthia
 - CSS
 - Javascript
 
-- 
+# Version control
+
+GIT
+Github
