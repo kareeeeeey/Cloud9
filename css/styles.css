@@ -1,131 +1,97 @@
-.nav-items{
+/*.nav-items{
 display: flex;
-flex-direction: row; 
-gap: 40px;
-font-size: 40px;
-font-style: italic;
+flex-direction: row;
+gap: 50px;
+font-size: 50px;
 justify-content: right;
+color: azure;
+}*/
 
+.nav-items {
+    align-items: center;
+    position: relative;
+    bottom: 80px;
+    font-size: 20px;
+    color: white;
 }
 
-body{
-background: #8c52ff;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-display: flex;
-height: 100vh;
-margin: 0;
-
-}
-
-#weather-container{
-background: rgba(255, 255, 255, 0.3);
-max-width: 400px;
-padding: 20px;
-border-radius: 15px;
-box-shadow: 0 8px 32px rgba(0, 0, o, 0.1);
-backdrop-filter: blur(10px);
-border: 1px solid rgba(255, 255, 255, 0.1);
+.logo{
+background: url(https://i.pinimg.com/474x/69/57/7d/69577dde4b83f8236462911a28744cb0.jpg);
+background-size: cover;
+background-repeat: no-repeat;
 text-align: center;
-
 }
 
-h2, label, p {
-color: #fff;
-margin: 8px 0;
-}
 
-input{
-padding: 8px;
-box-sizing: border-box;
-border-radius: 10px;
-border: 1px solid white;
-margin-top: 20px;
-
-}
-
-button{
-background: #debff4;
-color: white;
-border: none;
-padding:10px ;
-border-radius:10px ;
-cursor:pointer ;
-margin-top: 20px;
-width:100px ;
-font-size: 15px;
-
-}
-
-button :hover{
-background: #8b48d7;
-
-}
-
-#temp-div{
-font-size: 60px;
-margin-top:-30px;
-}
-
-#weather-info{
-font-size: 20px;
-
-}
-
-#weather-icon{
-width:200px ;
-height: 200px;
-margin: 0 auto 10px;
-margin-bottom: 0px;
-display: none;
-
-}
-
-#days-forecast{
-margin-top: 50px;
-overflow-x: auto;
-white-space: nowrap;
-display: flex;
-justify-content: space-between;
-
-}
-
-.daily-item{
-
-flex: 0 0 auto;
-width: 80px;
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-right: 10px;
+h1{
 color: white;
 
 }
 
-.daily-item img{
-width: 30px;
-height:30px;
-margin-bottom:5px;
-
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(https://i.pinimg.com/474x/69/57/7d/69577dde4b83f8236462911a28744cb0.jpg);
 }
 
-#hourly-headings{
-color: #fff;
-margin-top: 10PX;
-
+header {
+    padding: 1em;
+    text-align: center;
 }
 
-.container-1{
-justify-content: center;
-display: block;
-justify-items: center;
+nav ul {
+    list-style: none;
+    padding: 0;
+}
 
+nav li {
+    display: inline;
+    margin: 0 1em;
+}
 
+main {
+    padding: 2em;
+}
 
+#current-weather, #forecast, #about-us, #featured-locations {
+    margin-bottom: 2em;
+    border: 1px solid #ccc;
+    padding: 1em;
+}
 
+#weather-display {
+    text-align: center; /* Center the weather information */
+}
+
+#weather-icon {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    margin-top: 10px;
+}
+
+.location-card {
+    border: 1px solid #ddd;  /* Light border for the cards */
+    padding: 10px;           /* Some padding inside the cards */
+    margin: 10px;            /* Margin between the cards */
+    display: inline-block; /* Make them sit side by side */
+    width: 200px;          /* Set a width for the cards */
+    text-align: center;    /* Center the content */
+    vertical-align: top;  /* Align cards to the top*/
+}
+
+.location-card img {
+    max-width: 100%;   /* Make image responsive */
+    height: auto;      /* Maintain aspect ratio */
 }
 
 
-
-
-
-
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: relative; /* or absolute */
+    bottom: 0; /* or adjust as needed */
+    width: 100%;
+}
